@@ -1,113 +1,141 @@
+/* Global Box Sizing */
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
 
-  .hero1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px 5%;
-    min-height: 80vh;
-    background: #f5f7fa;
-    flex-wrap: wrap-reverse; /* Allows stacking on small screens */
-  }
+/* Hero Section */
+.hero1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 5%;
+  min-height: 80vh;
+  background: #f5f7fa;
+  flex-wrap: wrap-reverse; /* stack content on small screens */
+  gap: 20px;
+}
 
-  /* Left Side Content */
+/* Left Side Content */
+.hero1-content {
+  flex: 1;
+  max-width: 50%;
+  opacity: 0;
+  animation: fadeUp1 1s ease-out forwards;
+}
+
+.hero1-heading {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: rgb(1, 49, 138);
+  line-height: 1.2;
+  animation: slideUp1 1s ease-out forwards;
+}
+
+.hero1-subheading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 18px;
+  color: #333;
+}
+
+.hero1-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* CTA Button */
+.hero1-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  background-color: rgb(1, 49, 138);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.hero1-btn:hover {
+  background-color: rgb(0, 35, 100);
+  transform: translateY(-2px);
+}
+
+/* Right Side Image */
+.hero1-image {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero1-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(2,24,71,0.08);
+  transition: transform 0.4s ease;
+}
+
+.hero1-image img:hover {
+  transform: scale(1.03);
+}
+
+/* Animations */
+@keyframes slideUp1 {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp1 {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
   .hero1-content {
-    flex: 1;
-    max-width: 50%;
-    opacity: 1; /* Ensure text is visible */
-    animation: fadeUp1 1s ease-out forwards;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
   }
-
-  .hero1-heading {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    animation: slideUp1 1s ease-out forwards;
-  }
-
-  .hero1-subheading {
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin-bottom: 15px;
-    color: #333;
-  }
-
-  .hero1-text {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 25px;
-    line-height: 1.5;
-  }
-
-  .hero1-btn {
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: rgb(1, 49, 138);
-    color: #fff;
-    font-weight: 600;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-
-  .hero1-btn:hover {
-    background-color: rgb(0, 35, 100);
-  }
-
-  /* Right Side Image */
   .hero1-image {
-    flex: 1;
-    max-width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 100%;
   }
 
+}
+
+@media (max-width: 680px) {
+  .hero1-heading {
+    font-size: 2rem;
+  }
+  .hero1-subheading {
+    font-size: 1.2rem;
+  }
+  .hero1-text {
+    font-size: 0.95rem;
+  }
+  .hero1-btn {
+    padding: 12px 28px;
+    font-size: 0.95rem;
+  }
   .hero1-image img {
-    width: 100%;
-    height: auto;
     border-radius: 12px;
   }
-
-  /* Animations */
-  @keyframes slideUp1 {
-    0% {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    .hero1{
+    display: flex;
+    flex-direction: column;
   }
-
-  @keyframes fadeUp1 {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-
-  /* Responsive */
-  @media (max-width: 1024px) {
-    .hero1-content {
-      max-width: 100%;
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .hero1-image {
-      max-width: 100%;
-    }
-  }
-
-  @media (max-width: 600px) {
-    .hero1-heading {
-      font-size: 2rem;
-    }
-    .hero1-subheading {
-      font-size: 1.2rem;
-    }
-    .hero1-text {
-      font-size: 0.95rem;
-    }
-  }
+}

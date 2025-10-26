@@ -1,31 +1,83 @@
+/* Hero Section */
 .heroSection {
-  display: grid; 
-  grid-template-columns:1fr 420px; 
-  gap:24px; 
-  align-items:center; 
-  padding:48px 0;
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 24px;
+  align-items: center;
+  padding: 48px 5%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .heroSection h1 {
-  font-size:36px; 
-  margin:0 0 12px; 
-  color:var(--brand-blue);
+  font-size: 3rem;
+  margin: 0 0 12px;
+  color: var(--brand-blue);
+  line-height: 1.2;
 }
 
 .heroSection p {
-  margin:0 0 18px; 
-  font-size:18px; 
-  color:#334155;
+  margin: 0 0 18px;
+  font-size: 1.125rem; /* 18px */
+  color: #334155;
+  line-height: 1.6;
 }
 
 .heroSection-ctas {
-  display:flex; 
-  gap:12px; 
-  margin-top:10px;
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  flex-wrap: wrap; /* wrap on small screens */
 }
 
+/* Cards */
 .card {
-  background:var(--muted); 
-  padding:18px; 
-  border-radius:12px;
+  background: var(--muted);
+  padding: 18px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(2, 24, 71, 0.08);
+}
+
+/* Responsive Adjustments */
+
+/* Tablets / Medium Screens */
+@media (max-width: 1024px) {
+  .heroSection {
+    grid-template-columns: 1fr 1fr; /* make right side flexible */
+    gap: 20px;
+  }
+
+  .heroSection h1 {
+    font-size: 2.6rem;
+  }
+
+  .heroSection p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 680px) {
+  .heroSection {
+    grid-template-columns: 1fr; /* stack content vertically */
+    text-align: center;
+    gap: 24px;
+  }
+
+  .heroSection h1 {
+    font-size: 2rem;
+  }
+
+  .heroSection p {
+    font-size: 0.95rem;
+  }
+
+  .heroSection-ctas {
+    justify-content: center; /* center buttons on mobile */
+  }
 }
