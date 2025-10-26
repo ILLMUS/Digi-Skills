@@ -1,0 +1,92 @@
+.trust-section {
+  padding: 70px 5%;
+  background: #f7f9fc;
+  text-align: center;
+}
+
+.trust-section h2 {
+  color: var(--brand-blue);
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.trust-section .subtitle {
+  color: #55627A;
+  font-size: 1.05rem;
+  margin-bottom: 50px;
+}
+
+.trust-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 50px;
+}
+
+.trust-badge {
+  background: #fff;
+  border-radius: 14px;
+  padding: 18px 24px;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 6px 24px rgba(2,24,71,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.trust-badge:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 36px rgba(2,24,71,0.12);
+}
+
+.trust-badge img {
+  width: 60px;
+  margin-bottom: 12px;
+}
+
+.trust-badge p {
+  margin: 0;
+  color: #334155;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* Social Proof Cards */
+.social-proof {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.proof-card {
+  background: var(--brand-blue);
+  color: #fff;
+  padding: 22px 28px;
+  border-radius: 12px;
+  min-width: 120px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(1,49,138,0.15);
+}
+
+.proof-card h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.proof-card p {
+  margin: 4px 0 0 0;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media(max-width: 850px) {
+  .trust-grid, .social-proof {
+    flex-direction: column;
+    align-items: center;
+  }
+}

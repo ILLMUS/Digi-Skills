@@ -1,0 +1,86 @@
+.who-serve-section {
+  padding: 80px 5%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.who-serve-section h2 {
+  font-size: 2.4rem;
+  color: var(--brand-blue);
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.who-serve-section .subtitle {
+  color: #55627A;
+  margin-bottom: 50px;
+  font-size: 1.05rem;
+}
+
+.serve-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.serve-card {
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px 18px;
+  gap: 18px;
+  box-shadow: 0 6px 24px rgba(2,24,71,0.05);
+  border: 1px solid rgba(1,49,138,0.1);
+  transition: transform 0.35s, box-shadow 0.35s;
+}
+
+.serve-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 36px rgba(2,24,71,0.12);
+}
+
+.serve-card .icon {
+  background: var(--brand-blue);
+  width: 60px; height: 60px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.serve-card .icon i {
+  color: #fff;
+  font-size: 28px;
+}
+
+.serve-card h3 {
+  margin: 0 0 4px;
+  color: var(--brand-blue);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.serve-card p {
+  margin: 0;
+  color: #3a4863;
+  font-size: 0.96rem;
+  line-height: 1.45;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 1024px) {
+  .serve-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  .serve-cards {
+    grid-template-columns: 1fr;
+  }
+}
+/* CSS for reveal */
+.reveal { opacity: 0; transform: translateY(20px); transition: all .6s ease-out; }
+.reveal.show { opacity: 1; transform: translateY(0); }

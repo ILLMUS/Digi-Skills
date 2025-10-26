@@ -1,0 +1,31 @@
+.heroSection {
+  display: grid; 
+  grid-template-columns:1fr 420px; 
+  gap:24px; 
+  align-items:center; 
+  padding:48px 0;
+}
+
+.heroSection h1 {
+  font-size:36px; 
+  margin:0 0 12px; 
+  color:var(--brand-blue);
+}
+
+.heroSection p {
+  margin:0 0 18px; 
+  font-size:18px; 
+  color:#334155;
+}
+
+.heroSection-ctas {
+  display:flex; 
+  gap:12px; 
+  margin-top:10px;
+}
+
+.card {
+  background:var(--muted); 
+  padding:18px; 
+  border-radius:12px;
+}

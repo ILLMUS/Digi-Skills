@@ -1,0 +1,101 @@
+:root {
+  --brand-blue: rgb(1,49,138);
+  --muted: #f5f7fb;
+}
+
+.tools-section {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  gap: 24px;
+  align-items: center;
+  padding: 48px 5%;
+  overflow: hidden; /* keep moving images clipped */
+}
+
+/* LEFT */
+.tools-left {
+  text-align: center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:16px;
+}
+
+.tools-logo {
+  width: 85%;
+  max-width: 220px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(2,24,71,0.07);
+}
+
+.tools-left-desc {
+  color: #334155;
+  font-size: 1rem;
+  margin: 0;
+  max-width: 220px;
+}
+
+.tools-cta {
+  display:inline-block;
+  padding: 10px 20px;
+  background: var(--brand-blue);
+  color:#fff;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* RIGHT */
+.tools-right {
+  width:100%;
+  height: 220px; /* adjust as needed */
+  display:flex;
+  flex-direction:column;
+  gap: 18px;
+  justify-content:center;
+  overflow: hidden; /* hide overflow while tracks move */
+  position: relative;
+}
+
+/* Each row holds a long horizontally-scrolling track */
+.tools-row {
+  width:100%;
+  height: calc(50% - 9px);
+  overflow: hidden;
+  position: relative;
+  display:flex;
+  align-items:center;
+}
+
+/* track is wide — we duplicated images inside to allow seamless loop */
+.tools-track {
+  display:flex;
+  gap: 28px;
+  align-items:center;
+  will-change: transform;
+}
+
+/* logo image */
+.tool-img {
+  width: 110px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 20px rgba(2,24,71,0.06));
+  border-radius:8px;
+  background: #fff;
+  padding:10px;
+}
+
+/* make sure small screens stack nicely */
+@media (max-width: 980px) {
+  .tools-section {
+    grid-template-columns: 1fr;
+    padding: 36px 4%;
+    gap: 18px;
+  }
+  .tools-left { order: 2; }
+  .tools-right { order: 1; height: 320px; }
+  .tool-img { width: 90px; }
+}
