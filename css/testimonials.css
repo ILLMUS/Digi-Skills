@@ -90,7 +90,9 @@
   background: var(--card-bg);
   border-radius: 14px;
   padding: 18px;
-  box-shadow: 0 8px 30px rgba(2,24,71,0.06);
+  margin-bottom: 2rem;
+  border: 1px solid rgb(3, 16, 88);
+  box-shadow: 4PX 8px 12px rgba(2, 24, 71, 0.514);
   text-align: left;
   color: var(--text);
   display: flex;

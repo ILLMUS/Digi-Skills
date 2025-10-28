@@ -39,7 +39,7 @@
 
   <!-- Favicon & Theme -->
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon.io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.io/favicon-32x32.jpg">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon.io/favicon-16x16.png">
   <link rel="manifest" href="/assets/site.webmanifest">
   <meta name="theme-color" content="#01318A">
@@ -127,12 +127,12 @@
     body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; color:var(--text); background:#fff; line-height:1.45}
     a{color:inherit; text-decoration:none}
 
-    .primary-cta{background:var(--brand-blue); color:#fff; padding:10px 16px; border-radius:8px; font-weight:600}
-    .secondary-cta{border:2px solid var(--brand-blue); color:var(--brand-blue); padding:8px 12px; border-radius:8px; font-weight:600}
+    .primary-cta{background:var(--brand-blue); border: 1px solid var(--brand-blue); color:#fff; padding:10px 16px; border-radius:8px; font-weight:600}
+    .secondary-cta{border:2px solid var(--brand-blue); border: none; color:var(--brand-blue); padding:8px 12px; border-radius:8px; font-weight:600}
 
     /* Courses */
-    .courses{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; margin-top:22px}
-    .course-card{background:#fff;border:1px solid #eee;padding:18px;border-radius:10px;display:flex;flex-direction:column;gap:10px;height:100%}
+    .courses{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; margin-top:22px; margin-left: 3rem; margin-right: 3rem;}
+    .course-card{background:#fff;border:1px solid #cccccc;padding:18px;border-radius:10px;display:flex;flex-direction:column;gap:10px;height:100%}
     .course-title{font-weight:700;color:var(--brand-blue)}
 
     /* Testimonials */
@@ -150,7 +150,7 @@
 <header aria-label="Main header">
   <div class="container nav">
     <div class="logo" aria-hidden="true">
-      <img src="assets/logo/Logo.svg" alt="Digi-Skills World logo">
+      <img src="assets/logo/Logo.jpg" alt="Digi-Skills World logo">
       <div>
         <strong style="color:var(--brand-blue)">DIGI-SKILLS WORLD</strong>
         <div class="small">Master Skills. Build Wealth.</div>
@@ -267,7 +267,7 @@
 
 <section class="tools-section container" aria-labelledby="tools-heading">
   <div class="tools-left">
-    <img src="/assets/logo/Logo.svg" alt="Digi-Skills World Logo" class="tools-logo"/>
+    <img src="/assets/logo/Logo.jpg" alt="Digi-Skills World Logo" class="tools-logo"/>
     <p class="tools-left-desc">We build with proven tools to deliver fast, reliable results.</p>
     <a href="#courses" class="btn primary-cta tools-cta">Explore Courses</a>
   </div>
@@ -318,73 +318,93 @@
       <ul class="testimonials-track" id="testimonialsTrack" aria-live="polite">
         <!-- 10 testimonial items -->
         <li class="testimonial-card">
-          <div class="avatar"><img src="/assets/testimonials/person1.jpg" alt="Amanda — Graduate" /></div>
+          <div class="avatar"><img src="/assets/testimonials/1.jpg" alt="Peter — Marketer" /></div>
           <div class="rating">★★★★★</div>
-          <blockquote>“I launched my online business in 4 weeks. The hands-on templates and mentorship made it possible.”</blockquote>
-          <cite>Amanda T. — Entrepreneur</cite>
+          <blockquote>
+          “Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </blockquote>
+          <cite>SZA G. — Digital Marketer</cite>
         </li>
 
         <li class="testimonial-card">
-          <div class="avatar"><img src="/assets/testimonials/person2.jpg" alt="Peter — Marketer" /></div>
+          <div class="avatar"><img src="/assets/testimonials/2.jpg" alt="Peter — Marketer" /></div>
           <div class="rating">★★★★★</div>
-          <blockquote>“AI workflows and ad strategies doubled our leads within a month — real, measurable results.”</blockquote>
+          <blockquote>
+          “Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </blockquote>
           <cite>Peter M. — Digital Marketer</cite>
         </li>
 
         <li class="testimonial-card">
-          <div class="avatar"><img src="/assets/testimonials/person3.jpg" alt="Thabani — Founder" /></div>
+          <div class="avatar"><img src="/assets/testimonials/3.jpg" alt="Thabani — Founder" /></div>
           <div class="rating">★★★★★</div>
-          <blockquote>“Practical lessons and templates — no fluff. I finally launched my store and made sales the first month.”</blockquote>
+          <blockquote>
+          “Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </blockquote>       
           <cite>Thabani N. — Founder</cite>
         </li>
 
         <li class="testimonial-card">
-          <div class="avatar"><img src="/assets/testimonials/person4.jpg" alt="Grace — Freelancer" /></div>
+          <div class="avatar"><img src="/assets/testimonials/4.jpg" alt="Grace — Freelancer" /></div>
           <div class="rating">★★★★★</div>
-          <blockquote>“I landed my first high-value client after the copywriting module — worth every cent.”</blockquote>
+          <blockquote>
+          “Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </blockquote>          
           <cite>Grace O. — Freelancer</cite>
         </li>
 
         <li class="testimonial-card">
-          <div class="avatar"><img src="/assets/testimonials/person5.jpg" alt="Kevin — Career changer" /></div>
+          <div class="avatar"><img src="/assets/testimonials/5.jpg" alt="Kevin — Career changer" /></div>
           <div class="rating">★★★★★</div>
-          <blockquote>“From side-hustle to full-time income. The mentorship and community pushed me forward.”</blockquote>
+          <blockquote>
+          “Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </blockquote>          
           <cite>Kevin L. — Business Owner</cite>
         </li>
 
         <!-- next 5 (will slide in) -->
         <li class="testimonial-card">
-          <div class="avatar"><img src="/assets/testimonials/person6.jpg" alt="Zanele — Student" /></div>
+          <div class="avatar"><img src="/assets/testimonials/6.jpg" alt="Zanele — Student" /></div>
           <div class="rating">★★★★★</div>
-          <blockquote>“Affordable, practical, and supportive. The best investment I made this year.”</blockquote>
+          <blockquote>
+          “Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </blockquote>          
           <cite>Zanele M. — Graduate</cite>
         </li>
 
         <li class="testimonial-card">
-          <div class="avatar"><img src="/assets/testimonials/person7.jpg" alt="Samuel — Consultant" /></div>
+          <div class="avatar"><img src="/assets/testimonials/1.jpg" alt="Samuel — Consultant" /></div>
           <div class="rating">★★★★★</div>
-          <blockquote>“The systemized funnels saved me hours of work and increased conversions.”</blockquote>
+          <blockquote>
+          “Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </blockquote>
           <cite>Samuel A. — Consultant</cite>
         </li>
 
         <li class="testimonial-card">
-          <div class="avatar"><img src="/assets/testimonials/person8.jpg" alt="Nomsa — Founder" /></div>
+          <div class="avatar"><img src="/assets/testimonials/2.jpg" alt="Nomsa — Founder" /></div>
           <div class="rating">★★★★★</div>
-          <blockquote>“Community + real feedback = real growth. I scaled faster than expected.”</blockquote>
+          <blockquote>
+          “Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </blockquote>
           <cite>Nomsa P. — Founder</cite>
         </li>
 
         <li class="testimonial-card">
-          <div class="avatar"><img src="/assets/testimonials/person9.jpg" alt="Brian — Copywriter" /></div>
+          <div class="avatar"><img src="/assets/testimonials/3.jpg" alt="Brian — Copywriter" /></div>
           <div class="rating">★★★★★</div>
-          <blockquote>“Copy techniques from the course helped me close 3 sales in a week.”</blockquote>
-          <cite>Brian S. — Copywriter</cite>
+          <blockquote>
+          “Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </blockquote>
+                  <cite>Brian S. — Copywriter</cite>
         </li>
 
         <li class="testimonial-card">
-          <div class="avatar"><img src="/assets/testimonials/person10.jpg" alt="Vanessa — Creator" /></div>
+          <div class="avatar"><img src="/assets/testimonials/4.jpg" alt="Vanessa — Creator" /></div>
           <div class="rating">★★★★★</div>
-          <blockquote>“Lifetime access, active mentors, and a community that actually helps.”</blockquote>
+          <blockquote>
+          “Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        </blockquote>
           <cite>Vanessa E. — Creator</cite>
         </li>
       </ul>
@@ -682,9 +702,6 @@
 
 
 
-
-
-
 <section class="container blog-section" id="blog" aria-labelledby="blog-heading">
   <h2 id="blog-heading">From Our Blog</h2>
   <p class="subtitle">Stay updated with the latest tips, tools, and strategies to grow your digital business.</p>
@@ -760,7 +777,7 @@
           <div class="small"><a href="#courses" style="color:inherit">Courses</a> · <a href="#masterclass" style="color:inherit">Masterclass</a> · <a href="#testimonials" style="color:inherit">Success</a></div>
         </div>
     <div style="" class="logo" aria-hidden="true">
-      <img style="width:92px; height:102px" src="assets/logo/footer Logo.png" alt="Digi-Skills World logo">
+      <img style="width:92px; height:102px" src="assets/logo/Logo.jpg" alt="Digi-Skills World logo">
       <div>
         <strong style="color:var(--brand-blue)">DIGI-SKILLS WORLD</strong>
         <div class="small">Master Skills. Build Wealth.</div>

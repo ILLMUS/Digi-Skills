@@ -125,6 +125,7 @@ header .logo .small {
     display: flex;
     z-index: 10000;        /* above nav links */
   }
+
 }
 
 
