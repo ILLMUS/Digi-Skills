@@ -8,6 +8,8 @@
   <!-- GSAP for animations -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<!-- AOS Initialization -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
   <!-- SEO Core -->
   <title>Digital Skills Training in Africa | Digi-Skills World — Master Skills. Build Wealth.</title>
@@ -47,6 +49,7 @@
 
   <!-- Fonts & Styles -->
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/aniamation.css">
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/stats.css">
   <link rel="stylesheet" href="css/nav.css">
@@ -65,6 +68,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<!-- Include AOS CSS in <head> -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -162,6 +167,7 @@
       <a href="#courses">Courses</a>
       <a href="#testimonials">Success Stories</a>
       <a href="#mission">Mission</a>
+      <a href="about.html">About</a>
       <a href="#blog">Latest News</a>
       <a class="secondary-cta" href="#contact">Contact</a>
       <a class="primary-cta" href="#how">Enroll</a>
@@ -178,19 +184,23 @@
 
 
 <main>
-<section class="hero1">
+
+<!-- Hero Section 1 -->
+<section class="hero1" data-aos="fade-up">
   <div class="hero1-content">
     <h1 class="hero1-heading">Master Skills. Build Wealth.</h1>
     <h2 class="hero1-subheading">Empower your business journey with digital skills.</h2>
     <p class="hero1-text">Join hundreds of learners transforming their ideas into profitable ventures with practical, results-driven training.</p>
     <a href="#courses" class="hero1-btn">Get Started</a>
   </div>
-  <div class="hero1-image">
+  <div class="hero1-image" data-aos="fade-left">
     <img src="assets/imgs/hero.jpg" alt="Hero Image">
   </div>
 </section>
- <section class="container heroSection" aria-labelledby="hero-heading">
-  <div>
+
+<!-- Hero Section 2 -->
+<section class="container heroSection" aria-labelledby="hero-heading">
+  <div data-aos="fade-right">
     <h1 id="hero-heading">Turn Skills into Real Income</h1>
     <p>Practical, fast-track digital business courses for ambitious Africans. From Digital Marketing to AI-powered business automation — start from only E200.</p>
     
@@ -200,13 +210,13 @@
     </div>
 
     <div style="display:flex;gap:12px;margin-top:22px;align-items:center">
-      <div class="card small"><strong class="count" data-target="300">0</strong><div class="small">students trained</div></div>
-      <div class="card small"><strong class="count" data-target="60">0</strong><div class="small">businesses launched</div></div>
-      <div class="card small"><strong>Courses from E200</strong><div class="small">Affordable excellence</div></div>
+      <div class="card small" data-aos="fade-up"><strong class="count" data-target="300">0</strong><div class="small">students trained</div></div>
+      <div class="card small" data-aos="fade-up" data-aos-delay="100"><strong class="count" data-target="60">0</strong><div class="small">businesses launched</div></div>
+      <div class="card small" data-aos="fade-up" data-aos-delay="200"><strong>Courses from E200</strong><div class="small">Affordable excellence</div></div>
     </div>
   </div>
 
-  <aside class="card" aria-label="Quick course signup">
+  <aside class="card" aria-label="Quick course signup" data-aos="fade-left">
     <h3 style="margin-top:0">Reserve your seat</h3>
     <p class="small">Secure a seat for E50 — apply towards full course price at checkout.</p>
     <form id="reserveForm" onsubmit="event.preventDefault();alert('Reserve seat request received — integrate backend to complete');">
@@ -221,28 +231,28 @@
 </section>
 
 <!-- About Us Section -->
-<section class="about-section container">
-<div class="about-content">
-  <h2>Something About Us</h2>
-  <h3>Empowering Entrepreneurs Around the World to Achieve Wealth & Impact</h3>
-  <p>Digi-Skills World is a leading online academy that transforms ambitious individuals into confident, results-driven business owners. Our hands-on programs—from digital marketing mastery to AI-powered business solutions—equip learners with the skills to launch profitable ventures, scale their operations, and achieve financial independence.</p>
-  <p>With hundreds of students trained and dozens of successful businesses launched globally, we are committed to making world-class digital business education accessible to anyone, anywhere. Our mission is simple: give you the tools, strategies, and confidence to thrive in the global digital economy and turn your ideas into real, measurable success.</p>
-      <a class="secondary-cta" href="#contact">Contact</a>
-      <a class="primary-cta" href="#how">Enroll</a>
-</div>
+<section class="about-section container" data-aos="fade-up">
+  <div class="about-content">
+    <h2>Something About Us</h2>
+    <h3>Empowering Entrepreneurs Around the World to Achieve Wealth & Impact</h3>
+    <p>Digi-Skills World is a leading online academy that transforms ambitious individuals into confident, results-driven business owners. Our hands-on programs—from digital marketing mastery to AI-powered business solutions—equip learners with the skills to launch profitable ventures, scale their operations, and achieve financial independence.</p>
+    <p>With hundreds of students trained and dozens of successful businesses launched globally, we are committed to making world-class digital business education accessible to anyone, anywhere. Our mission is simple: give you the tools, strategies, and confidence to thrive in the global digital economy and turn your ideas into real, measurable success.</p>
+    <a class="secondary-cta" href="#contact">Contact</a>
+    <a class="primary-cta" href="#how">Enroll</a>
+  </div>
 
-    <div class="about-image">
+  <div class="about-image" data-aos="fade-left">
     <img src="assets/imgs/about.jpg" alt="Digi-Skills World Team at Work">
   </div>
 </section>
 
 <!-- Our Mission Section -->
-<section id="mission" class="mission-section container" aria-labelledby="mission-heading">
+<section id="mission" class="mission-section container" data-aos="fade-up" aria-labelledby="mission-heading">
   <h2 id="mission-heading">DIGI SKILLS MISSION</h2>
   <p>Transforming ambitious individuals into confident entrepreneurs with the skills, tools, and mindset to thrive in the global digital economy.</p>
 
   <div class="mission-cards">
-    <div class="card mission-card">
+    <div class="card mission-card" data-aos="fade-right">
       <div class="icon">
         <i class="fas fa-bullseye"></i>
       </div>
@@ -250,7 +260,7 @@
       <p>To empower learners worldwide with practical digital business skills that generate real income and drive meaningful impact.</p>
     </div>
 
-    <div class="card mission-card">
+    <div class="card mission-card" data-aos="fade-left">
       <div class="icon">
         <i class="fas fa-lightbulb"></i>
       </div>
@@ -259,43 +269,39 @@
     </div>
   </div>
 
-  <div class="mission-cta">
+  <div class="mission-cta" data-aos="fade-up">
     <p>Ready to take the leap and transform your ideas into a thriving business?</p>
     <a class="primary-cta" href="#enroll">Start Learning Today</a>
   </div>
 </section>
 
-<section class="tools-section container" aria-labelledby="tools-heading">
-  <div class="tools-left">
+<!-- Tools Section -->
+<section class="tools-section container" data-aos="fade-up" aria-labelledby="tools-heading">
+  <div class="tools-left" data-aos="fade-right">
     <img src="/assets/logo/Logo.jpg" alt="Digi-Skills World Logo" class="tools-logo"/>
     <p class="tools-left-desc">We build with proven tools to deliver fast, reliable results.</p>
     <a href="#courses" class="btn primary-cta tools-cta">Explore Courses</a>
   </div>
 
-  <div class="tools-right">
+  <div class="tools-right" data-aos="fade-left">
     <div class="tools-row row-top">
-      <!-- top row: slide left -> right -->
       <div class="tools-track">
         <img src="/assets/tools/Logo_Google_Analytics.svg" alt="Google Analytics" class="tool-img"/>
         <img src="/assets/tools/Google_Ads_logo.svg" alt="Google Ads" class="tool-img"/>
         <img src="/assets/tools/Meta_Platforms_Inc._logo.svg" alt="Meta" class="tool-img"/>
         <img src="/assets/tools/Gumroad_logo.svg" alt="Canva" class="tool-img"/>
-        <!-- repeat to create a continuous loop — duplicate set -->
-        <img src="/assets/tools/ChatGPT_logo.svg" alt="Google Analytics" class="tool-img"/>
-        <img src="/assets/tools/YouTube_Studio_logo.svg" alt="Google Ads" class="tool-img"/>
-        <img src="/assets/tools/MailChimp.svg" alt="Meta" class="tool-img"/>
-        <img src="/assets/tools/Zapier_logo.svg" alt="Canva" class="tool-img"/>
+        <img src="/assets/tools/ChatGPT_logo.svg" alt="ChatGPT" class="tool-img"/>
+        <img src="/assets/tools/YouTube_Studio_logo.svg" alt="YouTube Studio" class="tool-img"/>
+        <img src="/assets/tools/MailChimp.svg" alt="MailChimp" class="tool-img"/>
+        <img src="/assets/tools/Zapier_logo.svg" alt="Zapier" class="tool-img"/>
       </div>
     </div>
-
     <div class="tools-row row-bottom">
-      <!-- bottom row: slide right -> left -->
       <div class="tools-track">
-        <img src="/assets/tools/ChatGPT_logo.svg" alt="Google Analytics" class="tool-img"/>
-        <img src="/assets/tools/YouTube_Studio_logo.svg" alt="Google Ads" class="tool-img"/>
-        <img src="/assets/tools/MailChimp.svg" alt="Meta" class="tool-img"/>
-        <img src="/assets/tools/Zapier_logo.svg" alt="Canva" class="tool-img"/>
-        <!-- duplicate for seamless loop -->
+        <img src="/assets/tools/ChatGPT_logo.svg" alt="ChatGPT" class="tool-img"/>
+        <img src="/assets/tools/YouTube_Studio_logo.svg" alt="YouTube Studio" class="tool-img"/>
+        <img src="/assets/tools/MailChimp.svg" alt="MailChimp" class="tool-img"/>
+        <img src="/assets/tools/Zapier_logo.svg" alt="Zapier" class="tool-img"/>
         <img src="/assets/tools/Logo_Google_Analytics.svg" alt="Google Analytics" class="tool-img"/>
         <img src="/assets/tools/Google_Ads_logo.svg" alt="Google Ads" class="tool-img"/>
         <img src="/assets/tools/Meta_Platforms_Inc._logo.svg" alt="Meta" class="tool-img"/>
@@ -305,107 +311,77 @@
   </div>
 </section>
 
-<section id="testimonials" class="testimonials-section container" aria-labelledby="testimonials-heading">
-  <div class="testimonials-header">
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials-section container" data-aos="fade-up" aria-labelledby="testimonials-heading">
+  <div class="testimonials-header" data-aos="fade-down">
     <h2 id="testimonials-heading">What Our Students Say</h2>
     <p class="subtitle">Practical skills. Real results. Global impact.</p>
   </div>
 
-  <div class="testimonials-viewport" role="region" aria-label="Testimonials carousel">
+  <div class="testimonials-viewport" role="region" aria-label="Testimonials carousel" data-aos="fade-up" data-aos-delay="100">
     <button class="carousel-nav prev" aria-label="Previous testimonials" id="prevBtn">&#10094;</button>
 
     <div class="testimonials-track-wrap">
       <ul class="testimonials-track" id="testimonialsTrack" aria-live="polite">
-        <!-- 10 testimonial items -->
-        <li class="testimonial-card">
+        <li class="testimonial-card" data-aos="fade-up">
           <div class="avatar"><img src="/assets/testimonials/1.jpg" alt="Peter — Marketer" /></div>
           <div class="rating">★★★★★</div>
-          <blockquote>
-          “Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        </blockquote>
+          <blockquote>“Lorem ipsum dolor sit amet consectetur adipisicing elit.”</blockquote>
           <cite>SZA G. — Digital Marketer</cite>
         </li>
-
-        <li class="testimonial-card">
+        <li class="testimonial-card" data-aos="fade-up" data-aos-delay="50">
           <div class="avatar"><img src="/assets/testimonials/2.jpg" alt="Peter — Marketer" /></div>
           <div class="rating">★★★★★</div>
-          <blockquote>
-          “Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        </blockquote>
+          <blockquote>“Lorem ipsum dolor sit amet consectetur adipisicing elit.”</blockquote>
           <cite>Peter M. — Digital Marketer</cite>
         </li>
-
-        <li class="testimonial-card">
+        <li class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
           <div class="avatar"><img src="/assets/testimonials/3.jpg" alt="Thabani — Founder" /></div>
           <div class="rating">★★★★★</div>
-          <blockquote>
-          “Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        </blockquote>       
+          <blockquote>“Lorem ipsum dolor sit amet consectetur adipisicing elit.”</blockquote>
           <cite>Thabani N. — Founder</cite>
         </li>
-
-        <li class="testimonial-card">
-          <div class="avatar"><img src="/assets/testimonials/4.jpg" alt="Grace — Freelancer" /></div>
+                <li class="testimonial-card" data-aos="fade-up">
+          <div class="avatar"><img src="/assets/testimonials/1.jpg" alt="Peter — Marketer" /></div>
           <div class="rating">★★★★★</div>
-          <blockquote>
-          “Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        </blockquote>          
-          <cite>Grace O. — Freelancer</cite>
+          <blockquote>“Lorem ipsum dolor sit amet consectetur adipisicing elit.”</blockquote>
+          <cite>SZA G. — Digital Marketer</cite>
         </li>
-
-        <li class="testimonial-card">
-          <div class="avatar"><img src="/assets/testimonials/5.jpg" alt="Kevin — Career changer" /></div>
+        <li class="testimonial-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="avatar"><img src="/assets/testimonials/2.jpg" alt="Peter — Marketer" /></div>
           <div class="rating">★★★★★</div>
-          <blockquote>
-          “Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        </blockquote>          
-          <cite>Kevin L. — Business Owner</cite>
+          <blockquote>“Lorem ipsum dolor sit amet consectetur adipisicing elit.”</blockquote>
+          <cite>Peter M. — Digital Marketer</cite>
         </li>
-
-        <!-- next 5 (will slide in) -->
-        <li class="testimonial-card">
-          <div class="avatar"><img src="/assets/testimonials/6.jpg" alt="Zanele — Student" /></div>
+        <li class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="avatar"><img src="/assets/testimonials/3.jpg" alt="Thabani — Founder" /></div>
           <div class="rating">★★★★★</div>
-          <blockquote>
-          “Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        </blockquote>          
-          <cite>Zanele M. — Graduate</cite>
+          <blockquote>“Lorem ipsum dolor sit amet consectetur adipisicing elit.”</blockquote>
+          <cite>Thabani N. — Founder</cite>
         </li>
-
-        <li class="testimonial-card">
-          <div class="avatar"><img src="/assets/testimonials/1.jpg" alt="Samuel — Consultant" /></div>
+                <li class="testimonial-card" data-aos="fade-up">
+          <div class="avatar"><img src="/assets/testimonials/1.jpg" alt="Peter — Marketer" /></div>
           <div class="rating">★★★★★</div>
-          <blockquote>
-          “Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        </blockquote>
-          <cite>Samuel A. — Consultant</cite>
+          <blockquote>“Lorem ipsum dolor sit amet consectetur adipisicing elit.”</blockquote>
+          <cite>SZA G. — Digital Marketer</cite>
         </li>
-
-        <li class="testimonial-card">
-          <div class="avatar"><img src="/assets/testimonials/2.jpg" alt="Nomsa — Founder" /></div>
+        <li class="testimonial-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="avatar"><img src="/assets/testimonials/2.jpg" alt="Peter — Marketer" /></div>
           <div class="rating">★★★★★</div>
-          <blockquote>
-          “Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        </blockquote>
-          <cite>Nomsa P. — Founder</cite>
+          <blockquote>“Lorem ipsum dolor sit amet consectetur adipisicing elit.”</blockquote>
+          <cite>Peter M. — Digital Marketer</cite>
         </li>
-
-        <li class="testimonial-card">
-          <div class="avatar"><img src="/assets/testimonials/3.jpg" alt="Brian — Copywriter" /></div>
+        <li class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="avatar"><img src="/assets/testimonials/3.jpg" alt="Thabani — Founder" /></div>
           <div class="rating">★★★★★</div>
-          <blockquote>
-          “Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        </blockquote>
-                  <cite>Brian S. — Copywriter</cite>
+          <blockquote>“Lorem ipsum dolor sit amet consectetur adipisicing elit.”</blockquote>
+          <cite>Thabani N. — Founder</cite>
         </li>
-
-        <li class="testimonial-card">
-          <div class="avatar"><img src="/assets/testimonials/4.jpg" alt="Vanessa — Creator" /></div>
+                <li class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="avatar"><img src="/assets/testimonials/3.jpg" alt="Thabani — Founder" /></div>
           <div class="rating">★★★★★</div>
-          <blockquote>
-          “Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        </blockquote>
-          <cite>Vanessa E. — Creator</cite>
+          <blockquote>“Lorem ipsum dolor sit amet consectetur adipisicing elit.”</blockquote>
+          <cite>Thabani N. — Founder</cite>
         </li>
       </ul>
     </div>
@@ -413,7 +389,7 @@
     <button class="carousel-nav next" aria-label="Next testimonials" id="nextBtn">&#10095;</button>
   </div>
 
-  <div class="testimonials-controls">
+  <div class="testimonials-controls" data-aos="fade-up" data-aos-delay="150">
     <div class="dots" id="carouselDots" role="tablist" aria-label="Testimonial pages"></div>
     <div class="cta-wrap">
       <a class="primary-cta" href="#courses">See Courses That Deliver Results</a>
@@ -421,110 +397,105 @@
   </div>
 </section>
 
+<!-- Courses Section -->
+<section class="container" id="courses" aria-labelledby="courses-heading" data-aos="fade-up">
+  <h2 id="courses-heading">Top Courses</h2>
+  <div class="courses">
+    <article class="course-card" data-aos="fade-up">
+      <img src="assets/imgs/marketing.jpg" alt="marketing-img">
+      <div class="course-title">Digital Marketing Mastery</div>
+      <div class="small">Get your first paying client in 30 days</div>
+      <p class="small">Modules: Ads, Funnels, Organic Growth, Analytics</p>
+      <div style="margin-top:auto">
+        <a class="secondary-cta" href="#course-dm">View course</a>
+        <a class="primary-cta" href="#enroll" style="margin-left:8px">Enroll</a>
+      </div>
+    </article>
 
+    <article class="course-card" data-aos="fade-up" data-aos-delay="50">
+      <img src="assets/imgs/ai.jpg" alt="AI-img">
+      <div class="course-title">AI-Powered Business Solutions</div>
+      <div class="small">Automate tasks & increase profits</div>
+      <p class="small">Modules: AI workflows, Tools, Case studies</p>
+      <div style="margin-top:auto">
+        <a class="secondary-cta" href="#course-ai">View course</a>
+        <a class="primary-cta" href="#enroll" style="margin-left:8px">Enroll</a>
+      </div>
+    </article>
 
-  <section class="container" id="courses" aria-labelledby="courses-heading">
-    <h2 id="courses-heading">Top Courses</h2>
-    <div class="courses" role="list">
-      <article class="course-card" role="listitem">
-        <div class="course-title">Digital Marketing Mastery</div>
-        <div class="small">Get your first paying client in 30 days</div>
-        <p class="small">Modules: Ads, Funnels, Organic Growth, Analytics</p>
-        <div style="margin-top:auto">
-          <a class="secondary-cta" href="#course-dm">View course</a>
-          <a class="primary-cta" href="#enroll" style="margin-left:8px">Enroll</a>
-        </div>
-      </article>
+    <article class="course-card" data-aos="fade-up" data-aos-delay="100">
+      <img src="assets/imgs/copy.jpg" alt="copywriting-img">
+      <div class="course-title">High-Converting Copywriting</div>
+      <div class="small">Words that sell</div>
+      <p class="small">Modules: Persuasion, Offers, Landing pages</p>
+      <div style="margin-top:auto">
+        <a class="secondary-cta" href="#course-copy">View course</a>
+        <a class="primary-cta" href="#enroll" style="margin-left:8px">Enroll</a>
+      </div>
+    </article>
+  </div>
+</section>
 
-      <article class="course-card" role="listitem">
-        <div class="course-title">AI-Powered Business Solutions</div>
-        <div class="small">Automate tasks & increase profits</div>
-        <p class="small">Modules: AI workflows, Tools, Case studies</p>
-        <div style="margin-top:auto">
-          <a class="secondary-cta" href="#course-ai">View course</a>
-          <a class="primary-cta" href="#enroll" style="margin-left:8px">Enroll</a>
-        </div>
-      </article>
-
-      <article class="course-card" role="listitem">
-        <div class="course-title">High-Converting Copywriting</div>
-        <div class="small">Words that sell</div>
-        <p class="small">Modules: Persuasion, Offers, Landing pages</p>
-        <div style="margin-top:auto">
-          <a class="secondary-cta" href="#course-copy">View course</a>
-          <a class="primary-cta" href="#enroll" style="margin-left:8px">Enroll</a>
-        </div>
-      </article>
-    </div>
-  </section>
-
-<section class="why-choose-section reveal" id="why-choose-us">
+<!-- Why Choose Section -->
+<section class="why-choose-section" id="why-choose-us" data-aos="fade-up">
   <h2>Why Choose Digi Skills</h2>
   <p class="subtitle">Turn your passion into real digital income — faster & with guidance.</p>
 
   <div class="why-cards">
-    
-    <!-- Card 1 -->
-    <div class="why-card">
+    <div class="why-card" data-aos="fade-right">
       <div class="icon"><i class="fa-solid fa-bolt"></i></div>
       <div class="text">
         <h3>Fast Skill Growth</h3>
         <p>Learn job-ready skills in weeks — with simple, step-by-step lessons built for beginners.</p>
       </div>
     </div>
-
-    <!-- Card 2 -->
-    <div class="why-card">
+    <div class="why-card" data-aos="fade-up">
       <div class="icon"><i class="fa-solid fa-people-group"></i></div>
       <div class="text">
         <h3>Community Support</h3>
         <p>You’re never alone — mentorship, peers & feedback to help you stay motivated and win online.</p>
       </div>
     </div>
-
-    <!-- Card 3 -->
-    <div class="why-card">
+    <div class="why-card" data-aos="fade-left">
       <div class="icon"><i class="fa-solid fa-money-bill-trend-up"></i></div>
       <div class="text">
         <h3>Income-Driven Training</h3>
         <p>Learn real business tools that help you make money — not boring theory you’ll never use.</p>
       </div>
     </div>
-
   </div>
 
-  <div class="cta-wrap">
+  <div class="cta-wrap" data-aos="fade-up" data-aos-delay="50">
     <a href="#courses" class="primary-cta">Start Learning & Earning </a>
   </div>
 </section>
 
-<section class="trust-section reveal">
+<!-- Trust Section -->
+<section class="trust-section" data-aos="fade-up">
   <div class="trust-container">
     <h2>Trusted by Ambitious Learners Worldwide</h2>
     <p class="subtitle">Join 300+ students who’ve launched 60+ successful businesses and counting.</p>
 
     <div class="trust-grid">
-      <!-- Trust Badges -->
-      <div class="trust-badge">
+      <div class="trust-badge" data-aos="fade-up">
         <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/PayPal_Logo.svg" alt="Secure Payments">
         <p>Secure Payments</p>
       </div>
-      <div class="trust-badge">
+      <div class="trust-badge" data-aos="fade-up" data-aos-delay="50">
         <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/ISO_9001_logo.svg" alt="Certified Courses">
         <p>Certified Courses</p>
       </div>
-      <div class="trust-badge">
+      <div class="trust-badge" data-aos="fade-up" data-aos-delay="100">
         <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Google_Logo.svg" alt="Global Recognition">
         <p>Global Recognition</p>
       </div>
-      <div class="trust-badge">
+      <div class="trust-badge" data-aos="fade-up" data-aos-delay="150">
         <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Badge_Star_icon.svg" alt="5-Star Reviews">
         <p>5-Star Reviews</p>
       </div>
     </div>
 
-    <!-- Social Proof -->
-    <div class="social-proof">
+    <div class="social-proof" data-aos="fade-up" data-aos-delay="200">
       <div class="proof-card">
         <h3>300+</h3>
         <p>Students Trained</p>
@@ -541,68 +512,55 @@
   </div>
 </section>
 
-
-<section id="who-we-serve" class="who-serve-section reveal">
+<!-- Who We Serve Section -->
+<section id="who-we-serve" class="who-serve-section" data-aos="fade-up">
   <h2>Who We Serve</h2>
   <p class="subtitle">Empowering ambitious individuals worldwide to launch, grow, and scale digital businesses.</p>
 
   <div class="serve-cards">
-    <!-- Card 1 -->
-    <div class="serve-card">
+    <div class="serve-card" data-aos="fade-right">
       <div class="icon"><i class="fa-solid fa-lightbulb"></i></div>
       <div class="text">
         <h3>Aspiring Entrepreneurs</h3>
         <p>First-time business starters with big dreams but need direction to turn ideas into profitable ventures.</p>
       </div>
     </div>
-
-    <!-- Card 2 -->
-    <div class="serve-card">
+    <div class="serve-card" data-aos="fade-up" data-aos-delay="50">
       <div class="icon"><i class="fa-solid fa-briefcase"></i></div>
       <div class="text">
         <h3>Side Hustlers</h3>
         <p>Employed professionals looking to create additional income streams without leaving their jobs.</p>
       </div>
     </div>
-
-    <!-- Card 3 -->
-    <div class="serve-card">
+    <div class="serve-card" data-aos="fade-left" data-aos-delay="100">
       <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
       <div class="text">
         <h3>Recent Graduates</h3>
         <p>Young professionals seeking practical business skills beyond formal education to start their careers fast.</p>
       </div>
     </div>
-
-    <!-- Card 4 -->
-    <div class="serve-card">
+    <div class="serve-card" data-aos="fade-right" data-aos-delay="150">
       <div class="icon"><i class="fa-solid fa-store"></i></div>
       <div class="text">
         <h3>Small Business Owners</h3>
         <p>Entrepreneurs aiming to digitize and scale their existing ventures with modern online strategies.</p>
       </div>
     </div>
-
-    <!-- Card 5 -->
-    <div class="serve-card">
+    <div class="serve-card" data-aos="fade-up" data-aos-delay="200">
       <div class="icon"><i class="fa-solid fa-user-tie"></i></div>
       <div class="text">
         <h3>Freelancers & Consultants</h3>
         <p>Service providers ready to systematize their business and grow a global client base efficiently.</p>
       </div>
     </div>
-
-    <!-- Card 6 -->
-    <div class="serve-card">
+    <div class="serve-card" data-aos="fade-left" data-aos-delay="250">
       <div class="icon"><i class="fa-solid fa-house-user"></i></div>
       <div class="text">
         <h3>Stay-at-Home Parents</h3>
         <p>Individuals seeking flexible, home-based opportunities to create income without compromising family time.</p>
       </div>
     </div>
-
-    <!-- Card 7 -->
-    <div class="serve-card">
+    <div class="serve-card" data-aos="fade-up" data-aos-delay="300">
       <div class="icon"><i class="fa-solid fa-exchange-alt"></i></div>
       <div class="text">
         <h3>Career Transitioners</h3>
@@ -612,15 +570,16 @@
   </div>
 </section>
 
-<section class="contact-section" id="contact" aria-labelledby="contact-heading">
+<!-- Contact Section -->
+<section class="contact-section" id="contact" data-aos="fade-up" aria-labelledby="contact-heading">
   <div class="contact-bg"></div>
-  <div class="contact-container reveal">
-    <h2 id="contact-heading">Get in Touch & Start Your Journey</h2>
-    <p class="subtitle">Have questions or ready to enroll? Connect with us and our team will guide you instantly.</p>
+  <div class="contact-container">
+    <h2 id="contact-heading" data-aos="fade-down">Get in Touch & Start Your Journey</h2>
+    <p class="subtitle" data-aos="fade-down" data-aos-delay="50">Have questions or ready to enroll? Connect with us and our team will guide you instantly.</p>
 
     <div class="contact-grid">
       <!-- Contact Info -->
-      <div class="contact-info">
+      <div class="contact-info" data-aos="fade-right">
         <div class="info-card">
           <i class="fa-solid fa-phone"></i>
           <div>
@@ -645,7 +604,7 @@
       </div>
 
       <!-- Contact Form -->
-      <form class="contact-form" id="contactForm" onsubmit="event.preventDefault(); alert('Thanks! We will contact you soon.');">
+      <form class="contact-form" id="contactForm" data-aos="fade-left" onsubmit="event.preventDefault(); alert('Thanks! We will contact you soon.');">
         <label for="name">Full Name</label>
         <input type="text" id="name" name="name" placeholder="Your full name" required>
 
@@ -661,32 +620,27 @@
   </div>
 </section>
 
-  
-<section class="container how-section" id="how" aria-labelledby="how-heading">
+<!-- How It Works Section -->
+<section class="container how-section" id="how" data-aos="fade-up" aria-labelledby="how-heading">
   <h2 id="how-heading">How It Works — Fast-Track in 3 Steps</h2>
   <p class="subtitle">Learn, apply, and earn with practical digital business skills designed for real results.</p>
 
   <div class="how-steps">
-    <!-- Step 1 -->
-    <div class="step-card reveal">
+    <div class="step-card" data-aos="fade-right">
       <div class="icon"><i class="fa-solid fa-book-open"></i></div>
       <div class="step-content">
         <strong>1. Learn</strong>
         <p class="small">Bite-sized modules, practical templates, and real-world strategies you can start today.</p>
       </div>
     </div>
-
-    <!-- Step 2 -->
-    <div class="step-card reveal">
+    <div class="step-card" data-aos="fade-up" data-aos-delay="50">
       <div class="icon"><i class="fa-solid fa-rocket"></i></div>
       <div class="step-content">
         <strong>2. Apply</strong>
         <p class="small">Hands-on assignments, business templates, and tools to implement your skills immediately.</p>
       </div>
     </div>
-
-    <!-- Step 3 -->
-    <div class="step-card reveal">
+    <div class="step-card" data-aos="fade-left" data-aos-delay="100">
       <div class="icon"><i class="fa-solid fa-money-bill-wave"></i></div>
       <div class="step-content">
         <strong>3. Earn</strong>
@@ -695,36 +649,32 @@
     </div>
   </div>
 
-  <div class="cta-wrap">
+  <div class="cta-wrap" data-aos="fade-up" data-aos-delay="150">
     <a href="#courses" class="primary-cta">Start Your Fast-Track Journey →</a>
   </div>
 </section>
 
-
-
-<section class="container blog-section" id="blog" aria-labelledby="blog-heading">
+<!-- Blog Section -->
+<section class="container blog-section" id="blog" data-aos="fade-up" aria-labelledby="blog-heading">
   <h2 id="blog-heading">From Our Blog</h2>
   <p class="subtitle">Stay updated with the latest tips, tools, and strategies to grow your digital business.</p>
 
   <div class="blog-grid">
-    <!-- Blog Card 1 -->
-    <div class="blog-card reveal">
+    <div class="blog-card" data-aos="fade-up">
       <img src="assets/blog/side-hustle.jpg" alt="Side Hustle">
       <strong>How to Start a Side Hustle in 7 Days</strong>
       <div class="small">Practical 7-day plan for beginners</div>
       <button class="read-more-btn" data-modal="modal1">Read More</button>
     </div>
 
-    <!-- Blog Card 2 -->
-    <div class="blog-card reveal">
+    <div class="blog-card" data-aos="fade-up" data-aos-delay="50">
       <img src="assets/blog/ai-tools.jpg" alt="AI Tools">
       <strong>AI Tools for Small Businesses</strong>
       <div class="small">Tools that save time and money</div>
       <button class="read-more-btn" data-modal="modal2">Read More</button>
     </div>
 
-    <!-- Blog Card 3 -->
-    <div class="blog-card reveal">
+    <div class="blog-card" data-aos="fade-up" data-aos-delay="100">
       <img src="assets/blog/copy.jpg" alt="Copywriting">
       <strong>Copywriting Basics</strong>
       <div class="small">Write offers that convert</div>
@@ -734,7 +684,7 @@
 </section>
 
 <!-- Modals -->
-<div id="modal1" class="blog-modal">
+<div id="modal1" class="blog-modal reveal">
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2>How to Start a Side Hustle in 7 Days</h2>
@@ -796,6 +746,51 @@
 // Accessibility: focus outlines are visible by system default.
 // Add any analytics or pixels here during deployment.
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const reveals = document.querySelectorAll('.reveal');
+
+    const revealOnScroll = () => {
+      for (let i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const revealTop = reveals[i].getBoundingClientRect().top;
+        const revealPoint = 200;
+
+        if (revealTop < windowHeight - revealPoint) {
+          reveals[i].classList.add('active');
+        }
+      }
+    };
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll(); // run once on page load
+  });
+</script>
+<script>
+  // Initialize AOS animations
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+
+  // Smooth page reload on logo click
+  document.getElementById("logo-link").addEventListener("click", function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+<script>
+  AOS.init({
+    duration: 1000,       // Animation duration in milliseconds
+    easing: 'ease-in-out', // Animation easing
+    once: true,           // Whether animation should happen only once while scrolling down
+    mirror: false         // Whether elements should animate out while scrolling past them
+  });
+</script>
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
 <script src="js/stats.js"></script>
 <script src="js/tools.js"></script>
 <script src="js/testimonials.js"></script>
