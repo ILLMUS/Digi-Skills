@@ -92,4 +92,7 @@
   .mission-card {
     max-width: 100%;
   }
+  .mission-section h2{
+      font-size: 1.5rem;
+  }
 }

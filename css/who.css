@@ -80,6 +80,9 @@
   .serve-cards {
     grid-template-columns: 1fr;
   }
+  .who-serve-section h2{
+      font-size: 1.5rem;
+  }
 }
 /* CSS for reveal */
 .reveal { opacity: 0; transform: translateY(20px); transition: all .6s ease-out; }

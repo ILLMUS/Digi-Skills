@@ -229,10 +229,22 @@
 
 /* ======== MOBILE OPTIMIZATION ======== */
 @media (max-width: 768px) {
+  .container{
+    margin: 0;
+  }
+  .courses{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
   .modal-content {
-    width: 95%;
+
+    width: 100%;
     padding: 20px;
     border-radius: 10px;
+    margin: 0;
   }
 
   .course-modal h2 {
@@ -251,5 +263,11 @@
 
   .course-modal ul li {
     font-size: 14px;
+  }
+  #courses-heading{
+      font-size: 1.5rem;
+  }
+  .course-stats h2{
+      font-size: 1.5rem;
   }
 }

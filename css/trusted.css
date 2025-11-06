@@ -89,4 +89,7 @@
     flex-direction: column;
     align-items: center;
   }
+  .trust-section h2{
+      font-size: 1.5rem;
+  }
 }

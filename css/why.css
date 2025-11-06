@@ -92,4 +92,16 @@
   .why-cards {
     grid-template-columns: 1fr;
   }
+  .why-choose-section{
+    margin: 0;
+  }
+    .why-cards{
+    margin: 0;
+  }
+      .why-card{
+    margin: 0;
+  }
+  .why-choose-section h2{
+      font-size: 1.5rem;
+  }
 }

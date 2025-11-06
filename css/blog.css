@@ -162,7 +162,7 @@
 /* Responsive */
 @media(max-width: 680px) {
   .blog-card img { height: 160px; }
-  .blog-section h2 { font-size: 2rem; }
+  .blog-section h2 { font-size: 1.5rem; }
   .blog-section .subtitle { font-size: 0.95rem; }
   .read-more-btn { padding: 8px 16px; font-size: 0.9rem; }
   .blog-modal { padding: 40px 15px; }
