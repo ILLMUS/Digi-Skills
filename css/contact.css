@@ -121,3 +121,12 @@
     gap: 30px;
   }
 }
+@media(max-width: 768px){
+.contact-section h2 {
+  font-size: 1.6rem;
+  color: var(--brand-blue);
+  margin-bottom: 12px;
+  margin-top: -5rem;
+  font-weight: 800;
+}
+}

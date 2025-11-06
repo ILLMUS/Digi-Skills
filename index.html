@@ -64,6 +64,7 @@
   <link rel="stylesheet" href="css/trusted.css">
   <link rel="stylesheet" href="css/blog.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/courses.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-mFUO7P2Yk0kRzX5BL8B0v0zXSR0nJEdDWR9ahH9FlNkqD29I65bZFa7N9BQO6H6hYooB92tKUxZ1LEdGUZs1Mw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -129,23 +130,77 @@
       --gap:18px;
     }
     *{box-sizing:border-box}
-    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; color:var(--text); background:#fff; line-height:1.45}
-    a{color:inherit; text-decoration:none}
+    body{
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; 
+      margin:0; 
+      color:var(--text); 
+      background:#fff; 
+      line-height:1.45}
+    a{
+      color:inherit; 
+      text-decoration:none}
 
-    .primary-cta{background:var(--brand-blue); border: 1px solid var(--brand-blue); color:#fff; padding:10px 16px; border-radius:8px; font-weight:600}
-    .secondary-cta{border:2px solid var(--brand-blue); border: none; color:var(--brand-blue); padding:8px 12px; border-radius:8px; font-weight:600}
+    .primary-cta{
+      background:var(--brand-blue);
+       border: 1px solid var(--brand-blue); 
+       color:#fff; padding:10px 16px; 
+       border-radius:8px; 
+       font-weight:600}
+    .secondary-cta{
+      border:2px solid var(--brand-blue);
+      border: none;
+       color:var(--brand-blue);
+        padding:8px 12px;
+         border-radius:8px; 
+         font-weight:600}
 
     /* Courses */
-    .courses{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; margin-top:22px; margin-left: 3rem; margin-right: 3rem;}
-    .course-card{background:#fff;border:1px solid #cccccc;padding:18px;border-radius:10px;display:flex;flex-direction:column;gap:10px;height:100%}
-    .course-title{font-weight:700;color:var(--brand-blue)}
+    .courses{
+      display:grid;
+       grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+        gap:16px; 
+        margin-top:22px; 
+        margin-left: 3rem; 
+        margin-right: 3rem;}
+    .course-card{
+      background:#fff;
+      border:1px solid #cccccc;
+      padding:18px;
+      border-radius:10px;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      height:100%}
+    .course-title{
+      font-weight:700;
+      color:var(--brand-blue)}
 
     /* Testimonials */
-    .footer{background:#0b1220;color:#fff;padding:28px 0;margin-top:28px}
-    .whatsapp{position:fixed; right:18px; bottom:18px; background:#25D366; color:#fff; border-radius:999px; padding:12px 14px; font-weight:600; box-shadow:0 6px 18px rgba(0,0,0,0.15); z-index:60}
-    .small{font-size:13px;color:#6b7280}
+    .footer{
+      background:#0b1220;
+      color:#fff;padding:28px 28px;
+      margin-top:28px;
+    }
+    .whatsapp{
+      position:fixed;
+      right:18px;
+      bottom:18px; 
+      background:#25D366;
+      color:#fff;
+      border-radius:999px;
+      padding:12px 14px;
+      font-weight:600;
+      box-shadow:0 6px 18px rgba(0,0,0,0.15);
+      z-index:60
+            }
+    .small{font-size:13px;
+      color:#6b7280
+    }
     @media (max-width:900px){
-      .hero{grid-template-columns:1fr; padding:28px 0}
+      .hero{
+        grid-template-columns:1fr; 
+        padding:28px 0
+      }
 
     }
   </style>
@@ -164,13 +219,13 @@
 
     <nav class="nav-links" role="navigation" aria-label="Primary">
       <a href="index.html">Home</a>
-      <a href="#courses">Courses</a>
+      <a href="courses.html">Courses</a>
       <a href="#testimonials">Success Stories</a>
       <a href="#mission">Mission</a>
       <a href="about.html">About</a>
       <a href="#blog">Latest News</a>
-      <a class="secondary-cta" href="#contact">Contact</a>
-      <a class="primary-cta" href="#how">Enroll</a>
+      <a class="secondary-cta" href="contact.html">Contact</a>
+      <a class="primary-cta" href="courses.html">Enroll</a>
     </nav>
 
 <div class="hamburger" aria-label="Menu" aria-expanded="false" role="button">
@@ -205,8 +260,8 @@
     <p>Practical, fast-track digital business courses for ambitious Africans. From Digital Marketing to AI-powered business automation — start from only E200.</p>
     
     <div class="heroSection-ctas">
-      <a class="primary-cta" href="#cntacts">Start Learning Today</a>
-      <a class="secondary-cta" href="#">Read More</a>
+      <a class="primary-cta" href="#courses">Start Learning Today</a>
+      <a class="secondary-cta" href="#how">Read More</a>
     </div>
 
     <div style="display:flex;gap:12px;margin-top:22px;align-items:center">
@@ -226,7 +281,7 @@
       <input id="email" name="email" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #ddd;margin-top:6px"/>
       <button class="primary-cta" style="width:100%;margin-top:12px">Reserve E50</button>
     </form>
-    <p class="small" style="margin-top:8px">Payments: PayFast, M-Pesa, bank transfer (integrate gateways)</p>
+    <p class="small" style="margin-top:8px">Payments: PayPal, Mobile Money, bank transfer (FNB, Standard Bank)</p>
   </aside>
 </section>
 
@@ -238,7 +293,7 @@
     <p>Digi-Skills World is a leading online academy that transforms ambitious individuals into confident, results-driven business owners. Our hands-on programs—from digital marketing mastery to AI-powered business solutions—equip learners with the skills to launch profitable ventures, scale their operations, and achieve financial independence.</p>
     <p>With hundreds of students trained and dozens of successful businesses launched globally, we are committed to making world-class digital business education accessible to anyone, anywhere. Our mission is simple: give you the tools, strategies, and confidence to thrive in the global digital economy and turn your ideas into real, measurable success.</p>
     <a class="secondary-cta" href="#contact">Contact</a>
-    <a class="primary-cta" href="#how">Enroll</a>
+    <a class="primary-cta" href="#courses">Enroll</a>
   </div>
 
   <div class="about-image" data-aos="fade-left">
@@ -271,7 +326,7 @@
 
   <div class="mission-cta" data-aos="fade-up">
     <p>Ready to take the leap and transform your ideas into a thriving business?</p>
-    <a class="primary-cta" href="#enroll">Start Learning Today</a>
+    <a class="primary-cta" href="#courses">Start Learning Today</a>
   </div>
 </section>
 
@@ -396,45 +451,60 @@
     </div>
   </div>
 </section>
-
 <!-- Courses Section -->
-<section class="container" id="courses" aria-labelledby="courses-heading" data-aos="fade-up">
-  <h2 id="courses-heading">Top Courses</h2>
-  <div class="courses">
-    <article class="course-card" data-aos="fade-up">
-      <img src="assets/imgs/marketing.jpg" alt="marketing-img">
-      <div class="course-title">Digital Marketing Mastery</div>
-      <div class="small">Get your first paying client in 30 days</div>
-      <p class="small">Modules: Ads, Funnels, Organic Growth, Analytics</p>
-      <div style="margin-top:auto">
-        <a class="secondary-cta" href="#course-dm">View course</a>
-        <a class="primary-cta" href="#enroll" style="margin-left:8px">Enroll</a>
-      </div>
-    </article>
+  <!-- Courses Section -->
+  <section class="container" id="courses" aria-labelledby="courses-heading" data-aos="fade-up">
+    <h2 id="courses-heading">Top Courses</h2>
 
-    <article class="course-card" data-aos="fade-up" data-aos-delay="50">
-      <img src="assets/imgs/ai.jpg" alt="AI-img">
-      <div class="course-title">AI-Powered Business Solutions</div>
-      <div class="small">Automate tasks & increase profits</div>
-      <p class="small">Modules: AI workflows, Tools, Case studies</p>
-      <div style="margin-top:auto">
-        <a class="secondary-cta" href="#course-ai">View course</a>
-        <a class="primary-cta" href="#enroll" style="margin-left:8px">Enroll</a>
-      </div>
-    </article>
+    <div class="courses">
 
-    <article class="course-card" data-aos="fade-up" data-aos-delay="100">
-      <img src="assets/imgs/copy.jpg" alt="copywriting-img">
-      <div class="course-title">High-Converting Copywriting</div>
-      <div class="small">Words that sell</div>
-      <p class="small">Modules: Persuasion, Offers, Landing pages</p>
-      <div style="margin-top:auto">
-        <a class="secondary-cta" href="#course-copy">View course</a>
-        <a class="primary-cta" href="#enroll" style="margin-left:8px">Enroll</a>
-      </div>
-    </article>
+      <!-- Course 1 -->
+      <article class="course-card" data-aos="fade-up">
+        <img src="assets/imgs/marketing.jpg" alt="Digital Marketing course image" class="course-img">
+        <h3 class="course-title">Digital Marketing Mastery</h3>
+        <p class="small">Get your first paying client in 30 days</p>
+        <p class="small">Modules: Ads, Funnels, Organic Growth, Analytics</p>
+        <div class="course-actions">
+          <a href="#!" class="secondary-cta view-course-btn">View Course</a>
+          <a href="#contact" class="primary-cta enroll-btn">Enroll</a>
+        </div>
+      </article>
+
+      <!-- Course 2 -->
+      <article class="course-card" data-aos="fade-up" data-aos-delay="50">
+        <img src="assets/imgs/ai.jpg" alt="AI Business course image" class="course-img">
+        <h3 class="course-title">AI-Powered Business Solutions</h3>
+        <p class="small">Automate tasks & increase profits</p>
+        <p class="small">Modules: AI workflows, Tools, Case studies</p>
+        <div class="course-actions">
+          <a href="#!" class="secondary-cta view-course-btn">View Course</a>
+          <a href="#contact" class="primary-cta enroll-btn">Enroll</a>
+        </div>
+      </article>
+
+      <!-- Course 3 -->
+      <article class="course-card" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/imgs/copy.jpg" alt="Copywriting course image" class="course-img">
+        <h3 class="course-title">High-Converting Copywriting</h3>
+        <p class="small">Words that sell</p>
+        <p class="small">Modules: Persuasion, Offers, Landing pages</p>
+        <div class="course-actions">
+          <a href="#!" class="secondary-cta view-course-btn">View Course</a>
+          <a href="#contact" class="primary-cta enroll-btn">Enroll</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Existing Modal (Will be dynamically filled) -->
+  <div class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-overlay"></div>
+    <div class="modal-content" tabindex="0">
+      <!-- Course details will load here dynamically -->
+    </div>
   </div>
-</section>
+
 
 <!-- Why Choose Section -->
 <section class="why-choose-section" id="why-choose-us" data-aos="fade-up">
@@ -724,7 +794,7 @@
         </div>
         <div style="flex:1;min-width:220px">
           <h4 style="margin:0;color:#fff">Quick links</h4>
-          <div class="small"><a href="#courses" style="color:inherit">Courses</a> · <a href="#masterclass" style="color:inherit">Masterclass</a> · <a href="#testimonials" style="color:inherit">Success</a></div>
+          <div class="small"><a href="#courses" style="color:inherit">Courses</a> · <a href="contact.html " style="color:inherit">Contact Us</a> · <a href="#testimonials" style="color:inherit">Success</a></div>
         </div>
     <div style="" class="logo" aria-hidden="true">
       <img style="width:92px; height:102px" src="assets/logo/Logo.jpg" alt="Digi-Skills World logo">
@@ -739,7 +809,7 @@
   </section>
 </main>
 
-<button class="whatsapp" aria-label="Chat on WhatsApp" onclick="window.open('https://wa.me/26876427025','_blank')">WhatsApp</button>
+<button class="whatsapp" aria-label="Chat on WhatsApp" onclick="window.open('https://wa.me/26876759865','_blank')">WhatsApp</button>
 
 <script>
 // simple JS for sticky header behavior and reserved form demo already inline.
@@ -779,7 +849,6 @@
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 </script>
-
 <script>
   AOS.init({
     duration: 1000,       // Animation duration in milliseconds
@@ -788,8 +857,117 @@
     mirror: false         // Whether elements should animate out while scrolling past them
   });
 </script>
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
+
+
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.querySelector(".modal"); // your existing modal container
+  const modalContent = modal.querySelector(".modal-content"); // inner text area
+  const viewButtons = document.querySelectorAll(".view-course-btn");
+
+  const courseData = {
+    "Digital Marketing Mastery": {
+      title: "Digital Marketing Mastery",
+      image: "assets/imgs/marketing.jpg",
+      description: `
+        <p>Become a confident digital marketer in 30 days. Learn to attract clients, 
+        build conversion funnels, and run profitable ad campaigns like a pro. 
+        You’ll master Facebook Ads, Google Analytics, SEO, and organic growth.</p>
+        <ul>
+          <li>✅ Real-world marketing projects</li>
+          <li>✅ Live mentorship & growth sessions</li>
+          <li>✅ 100% practical lessons — no fluff</li>
+        </ul>
+      `,
+      cta: "Start your first marketing campaign today and attract paying clients faster than you ever imagined.",
+      enroll: "#contact"
+    },
+    "AI-Powered Business Solutions": {
+      title: "AI-Powered Business Solutions",
+      image: "assets/imgs/ai.jpg",
+      description: `
+        <p>Learn how to integrate AI into your business to save hours daily and 
+        scale profits automatically. Build smart workflows, use ChatGPT-like tools, 
+        and automate daily operations — even with zero coding.</p>
+        <ul>
+          <li>⚙️ Build real AI automations</li>
+          <li>📈 Optimize sales, content, and customer support</li>
+          <li>🚀 Case studies from top-performing businesses</li>
+        </ul>
+      `,
+      cta: "Transform your business with AI today — no technical background needed.",
+      enroll: "#contact"
+    },
+    "High-Converting Copywriting": {
+      title: "High-Converting Copywriting",
+      image: "assets/imgs/copy.jpg",
+      description: `
+        <p>Discover how to write words that sell — from landing pages and emails 
+        to social posts. Master psychology, persuasion, and offers that convert 
+        strangers into loyal buyers.</p>
+        <ul>
+          <li>🧠 Learn persuasion & emotional triggers</li>
+          <li>📝 Write powerful ads & landing pages</li>
+          <li>💰 Boost conversions & sales instantly</li>
+        </ul>
+      `,
+      cta: "Ready to write words that make money? Enroll now and turn your ideas into income.",
+      enroll: "#contact"
+    }
+  };
+
+  function openModal() {
+    modal.classList.add("open");
+    modal.setAttribute("aria-hidden", "false");
+    // focus so keyboard users can tab inside modal
+    setTimeout(()=> modal.querySelector(".modal-content").focus(), 60);
+  }
+  function closeModal() {
+    modal.classList.remove("open");
+    modal.setAttribute("aria-hidden", "true");
+    modalContent.innerHTML = ""; // clear out on close
+  }
+
+  viewButtons.forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      const card = btn.closest(".course-card");
+      const courseTitle = card.querySelector(".course-title").textContent.trim();
+      const course = courseData[courseTitle];
+
+      if (course) {
+        modalContent.innerHTML = `
+          <button class="modal-close" aria-label="Close modal">&times;</button>
+          <div class="course-modal">
+            <img src="${course.image}" alt="${course.title}" class="modal-img">
+            <h2>${course.title}</h2>
+            ${course.description}
+            <p class="cta-text">${course.cta}</p>
+            <a href="${course.enroll}" class="enroll-btn">Enroll Now</a>
+          </div>
+        `;
+        openModal();
+        // attach close listener to the newly created close button
+        const closeBtn = modalContent.querySelector(".modal-close");
+        closeBtn.addEventListener("click", closeModal);
+      } else {
+        console.warn("Course data not found for:", courseTitle);
+      }
+    });
+  });
+
+  // overlay click closes modal
+  const overlay = modal.querySelector(".modal-overlay");
+  overlay.addEventListener("click", closeModal);
+
+  // ESC closes modal
+  document.addEventListener("keydown", (ev) => {
+    if (ev.key === "Escape" && modal.classList.contains("open")) closeModal();
+  });
+});
+</script>
 
 <script src="js/stats.js"></script>
 <script src="js/tools.js"></script>

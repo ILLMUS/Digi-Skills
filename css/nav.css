@@ -92,7 +92,7 @@ header .logo .small {
 }
 
 /* Mobile Styles */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .nav-links {
     position: fixed;
     top: 0;
@@ -125,7 +125,13 @@ header .logo .small {
     display: flex;
     z-index: 10000;        /* above nav links */
   }
-
+header .logo strong {
+  font-size: 0.9rem;
+}
+header .logo .small {
+  font-size: 0.7rem;
+  color: #55627A;
+}
 }
 
 

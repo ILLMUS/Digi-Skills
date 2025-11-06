@@ -1,0 +1,590 @@
+
+<!Doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- GSAP for animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- Font Awesome & AOS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <!-- SEO Core -->
+  <title>Digital Skills   Courses | Digi-Skills World — Courses To Master Skills. Build Wealth.</title>
+  <meta name="description" content="Affordable, hands-on online courses for African entrepreneurs. Learn digital marketing, AI business tools, copywriting and launch your business — courses from E200. Join 300+ graduates.">
+  <meta name="keywords" content="Digital Skills, Online Courses Africa, Digital Marketing, AI Business Tools, Copywriting, Entrepreneurship Courses, Digi-Skills World">
+  <meta name="author" content="Digi-Skills World">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://digiskillsworld.com/">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Digi-Skills World">
+  <meta property="og:title" content="Digi-Skills World — Master Skills. Build Wealth.">
+  <meta property="og:description" content="Transform ideas into profitable online businesses. Practical courses for African entrepreneurs — Digital Marketing, AI, Copywriting & more.">
+  <meta property="og:image" content="https://digiskillsworld.com/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://digiskillsworld.com/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@digiskillsworld">
+  <meta name="twitter:title" content="Digi-Skills World — Master Skills. Build Wealth.">
+  <meta name="twitter:description" content="Practical digital business courses designed for Africa. Start today from E200.">
+  <meta name="twitter:image" content="https://digiskillsworld.com/assets/twitter-image.jpg">
+
+  <!-- Favicon & Theme -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon.io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.io/favicon-32x32.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon.io/favicon-16x16.png">
+  <link rel="manifest" href="/assets/site.webmanifest">
+  <meta name="theme-color" content="#01318A">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Fonts & Styles -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/aniamation.css">
+  <link rel="stylesheet" href="css/about-page">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/stats.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/mission.css">
+  <link rel="stylesheet" href="css/why.css">
+  <link rel="stylesheet" href="css/tools.css">
+  <link rel="stylesheet" href="css/testimonials.css">
+  <link rel="stylesheet" href="css/who.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/how.css">
+  <link rel="stylesheet" href="css/trusted.css">
+  <link rel="stylesheet" href="css/courses.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-mFUO7P2Yk0kRzX5BL8B0v0zXSR0nJEdDWR9ahH9FlNkqD29I65bZFa7N9BQO6H6hYooB92tKUxZ1LEdGUZs1Mw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Digi-Skills World",
+    "url": "https://digiskillsworld.com",
+    "logo": "https://digiskillsworld.com/assets/logo.png",
+    "description": "Affordable, hands-on digital skills courses for African entrepreneurs. Learn digital marketing, AI business tools, copywriting, and launch your business from E200.",
+    "foundingDate": "2024",
+    "founders": [
+      { "@type": "Person", "name": "Digi-Skills World Team" }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/digiskillsworld",
+      "https://www.instagram.com/digiskillsworld",
+      "https://www.linkedin.com/company/digiskillsworld"
+    ]
+  }
+  </script>
+  <style>
+    :root{
+      --brand-blue: #01318a;
+      --accent: #FF8A00;
+      --muted:#f5f7fb;
+      --max-w:1200px;
+      --radius:12px;
+      --text:#111827;
+      --gap:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; 
+      margin:0; 
+      color:var(--text); 
+      background:#fff; 
+      line-height:1.45}
+    a{
+      color:inherit; 
+      text-decoration:none}
+
+    .primary-cta{
+      background:var(--brand-blue);
+       border: 1px solid var(--brand-blue); 
+       color:#fff; padding:10px 16px; 
+       border-radius:8px; 
+       font-weight:600}
+    .secondary-cta{
+      border:2px solid var(--brand-blue);
+      border: none;
+       color:var(--brand-blue);
+        padding:8px 12px;
+         border-radius:8px; 
+         font-weight:600}
+
+    /* Courses */
+    .courses{
+      display:grid;
+       grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+        gap:16px; 
+        margin-top:22px; 
+        margin-left: 3rem; 
+        margin-right: 3rem;}
+    .course-card{
+      background:#fff;
+      border:1px solid #cccccc;
+      padding:18px;
+      border-radius:10px;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      height:100%}
+    .course-title{
+      font-weight:700;
+      color:var(--brand-blue)}
+
+    /* Testimonials */
+    .footer{
+      background:#0b1220;
+      color:#fff;padding:28px 28px;
+      margin-top:28px;
+    }
+    .whatsapp{
+      position:fixed;
+      right:18px;
+      bottom:18px; 
+      background:#25D366;
+      color:#fff;
+      border-radius:999px;
+      padding:12px 14px;
+      font-weight:600;
+      box-shadow:0 6px 18px rgba(0,0,0,0.15);
+      z-index:60
+            }
+    .small{font-size:13px;
+      color:#6b7280
+    }
+    @media (max-width:900px){
+      .hero{
+        grid-template-columns:1fr; 
+        padding:28px 0
+      }
+
+    }
+  </style>
+</head>
+<body>
+    
+<header aria-label="Main header">
+  <div class="container nav">
+    <div class="logo" aria-hidden="true">
+      <img src="assets/logo/Logo.jpg" alt="Digi-Skills World logo">
+      <div>
+        <strong style="color:var(--brand-blue)">DIGI-SKILLS WORLD</strong>
+        <div class="small">Master Skills. Build Wealth.</div>
+      </div>
+    </div>
+
+    <nav class="nav-links" role="navigation" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="index.hmlt#testimonials">Success Stories</a>
+      <a href="index.html#mission">Mission</a>
+      <a href="about.html">About</a>
+      <a href="index.html#blog">Latest News</a>
+      <a class="secondary-cta" href="contact.html">Contact</a>
+      <a class="primary-cta" href="#courses">Enroll</a>
+    </nav>
+
+<div class="hamburger" aria-label="Menu" aria-expanded="false" role="button">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+  </div>
+</header>
+
+
+<section class="course-stats container reveal" data-aos="fade-up">
+  <h2>Our Impact</h2>
+      <p>Practical digital business skills to launch, grow, and scale your ventures.</p>
+
+  <div class="stats-cards">
+    <div class="stat-card">
+      <strong class="count" data-target="300">0</strong>
+      <span>Students Trained</span>
+    </div>
+    <div class="stat-card">
+      <strong class="count" data-target="60">0</strong>
+      <span>Businesses Launched</span>
+    </div>
+    <div class="stat-card">
+      <strong class="count" data-target="95">0</strong>
+      <span>% Satisfaction</span>
+    </div>
+  </div>
+    <div class="course-list-header">
+
+    <p>Learn, apply, and earn — courses designed for real results.</p>
+  </div>
+</section>
+
+<section class="course-list container reveal" data-aos="fade-up">
+
+
+<section class="container" id="courses" aria-labelledby="courses-heading" data-aos="fade-up">
+  <h2 id="courses-heading">Top Courses</h2>
+
+  <div class="courses">
+
+    <!-- Course 1 -->
+    <article class="course-card" data-aos="fade-up">
+      <img src="assets/imgs/marketing.jpg" alt="Digital Marketing course image" class="course-img">
+      <h3 class="course-title">Digital Marketing Mastery</h3>
+      <p class="small">Get your first paying client in 30 days</p>
+      <p class="small">Modules: Ads, Funnels, Organic Growth, Analytics</p>
+      <div class="course-actions">
+        <a href="#!" class="secondary-cta view-course-btn">View Course</a>
+        <a href="#contact" class="primary-cta enroll-btn">Enroll</a>
+      </div>
+    </article>
+
+    <!-- Course 2 -->
+    <article class="course-card" data-aos="fade-up" data-aos-delay="50">
+      <img src="assets/imgs/ai.jpg" alt="AI Business course image" class="course-img">
+      <h3 class="course-title">AI-Powered Business Solutions</h3>
+      <p class="small">Automate tasks & increase profits</p>
+      <p class="small">Modules: AI Workflows, Tools, Automation</p>
+      <div class="course-actions">
+        <a href="#!" class="secondary-cta view-course-btn">View Course</a>
+        <a href="#contact" class="primary-cta enroll-btn">Enroll</a>
+      </div>
+    </article>
+
+    <!-- Course 3 -->
+    <article class="course-card" data-aos="fade-up" data-aos-delay="100">
+      <img src="assets/imgs/copy.jpg" alt="Copywriting course image" class="course-img">
+      <h3 class="course-title">High-Converting Copywriting</h3>
+      <p class="small">Words that sell</p>
+      <p class="small">Modules: Persuasion, Offers, Landing Pages</p>
+      <div class="course-actions">
+        <a href="#!" class="secondary-cta view-course-btn">View Course</a>
+        <a href="#contact" class="primary-cta enroll-btn">Enroll</a>
+      </div>
+    </article>
+
+    <!-- Course 4 -->
+    <article class="course-card" data-aos="fade-up" data-aos-delay="150">
+      <img src="assets/imgs/brand.jpg" alt="Brand Identity course image" class="course-img">
+      <h3 class="course-title">Brand Identity Development</h3>
+      <p class="small">Stand out in any market</p>
+      <p class="small">Modules: Visuals, Storytelling, Brand Strategy</p>
+      <div class="course-actions">
+        <a href="#!" class="secondary-cta view-course-btn">View Course</a>
+        <a href="#contact" class="primary-cta enroll-btn">Enroll</a>
+      </div>
+    </article>
+
+    <!-- Course 5 -->
+    <article class="course-card" data-aos="fade-up" data-aos-delay="200">
+      <img src="assets/imgs/sales.jpg" alt="Sales and Revenue course image" class="course-img">
+      <h3 class="course-title">Sales & Revenue Optimization</h3>
+      <p class="small">Proven systems that drive growth</p>
+      <p class="small">Modules: CRM, Funnels, Upsells, Retention</p>
+      <div class="course-actions">
+        <a href="#!" class="secondary-cta view-course-btn">View Course</a>
+        <a href="#contact" class="primary-cta enroll-btn">Enroll</a>
+      </div>
+    </article>
+
+    <!-- Course 6 -->
+    <article class="course-card" data-aos="fade-up" data-aos-delay="250">
+      <img src="assets/imgs/launch.jpg" alt="Business Launch course image" class="course-img">
+      <h3 class="course-title">Complete Business Launch Program</h3>
+      <p class="small">From concept to profit</p>
+      <p class="small">Modules: Ideation, Systems, Marketing, Scaling</p>
+      <div class="course-actions">
+        <a href="#!" class="secondary-cta view-course-btn">View Course</a>
+        <a href="#contact" class="primary-cta enroll-btn">Enroll</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- MODAL TEMPLATE -->
+<div class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="modal-overlay"></div>
+  <div class="modal-content" tabindex="0">
+    <!-- Course details will load here dynamically -->
+  </div>
+</div>
+</section>
+
+
+
+<!-- Course Modals -->
+<div class="modal" id="modal1">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Digital Marketing Mastery</h3>
+    <p><strong>Modules:</strong> Ads, Funnels, Organic Growth, Analytics</p>
+    <p><strong>Price:</strong> E200</p>
+    <a href="contact.html" class="primary-cta">Enroll Now</a>
+  </div>
+</div>
+
+<div class="modal" id="modal2">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>AI-Powered Business Solutions</h3>
+    <p><strong>Modules:</strong> AI workflows, Tools, Case studies</p>
+    <p><strong>Price:</strong> E250</p>
+    <a href="contact.html" class="primary-cta">Enroll Now</a>
+  </div>
+</div>
+
+<div class="modal" id="modal3">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>High-Converting Copywriting</h3>
+    <p><strong>Modules:</strong> Persuasion, Offers, Landing pages</p>
+    <p><strong>Price:</strong> E150</p>
+    <a href="contact.html" class="primary-cta">Enroll Now</a>
+  </div>
+</div>
+
+
+
+  <section class="footer" id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between">
+        <div style="flex:1;min-width:220px">
+          <h3 style="margin:0;color:#fff">DIGI-SKILLS WORLD</h3>
+          <p class="small">Master Skills. Build Wealth.</p>
+          <p class="small">Email: info@digiskillsworld.com</p>
+        </div>
+        <div style="flex:1;min-width:220px">
+          <h4 style="margin:0;color:#fff">Quick links</h4>
+          <div class="small"><a href="courses.html" style="color:inherit">Courses</a> · <a href="contact.html" style="color:inherit">Contact Us</a> · <a href="index.html#testimonials" style="color:inherit">Success</a></div>
+        </div>
+    <div style="" class="logo" aria-hidden="true">
+      <img style="width:92px; height:102px" src="assets/logo/Logo.jpg" alt="Digi-Skills World logo">
+      <div>
+        <strong style="color:var(--brand-blue)">DIGI-SKILLS WORLD</strong>
+        <div class="small">Master Skills. Build Wealth.</div>
+      </div>
+    </div>
+      </div>
+      <div style="margin-top:18px" class="small">© Digi-Skills World — Built by <strong><a href="https://www.rstsealed.com">RST Sealed</a></strong> — All rights reserved.</div>
+    </div>
+  </section>
+</main>
+
+<button class="whatsapp" aria-label="Chat on WhatsApp" onclick="window.open('https://wa.me/26876759865','_blank')">WhatsApp</button>
+
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  // Initialize AOS animations
+  AOS.init({ duration: 1000, once: true });
+
+  // Smooth scroll to top when logo is clicked
+  document.getElementById("logo-link").addEventListener("click", function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+<!--============ JS (Smooth Scroll + Scroll Animations) ============-->
+<script src="https://kit.fontawesome.com/a2d9a4f8c4.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+<script>
+  // Initialize AOS animations
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+
+  // Smooth page reload on logo click
+  document.getElementById("logo-link").addEventListener("click", function(e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.querySelector(".modal");
+  const modalContent = modal.querySelector(".modal-content");
+  const viewButtons = document.querySelectorAll(".view-course-btn");
+
+  const courseData = {
+    "Digital Marketing Mastery": {
+      title: "Digital Marketing Mastery",
+      image: "assets/imgs/marketing.jpg",
+      price: "E200",
+      duration: "30 Days",
+      description: `
+        <p>Become a confident digital marketer. Learn the exact skills and strategies used by top agencies to attract customers and generate income online.</p>
+        <h4>What You'll Learn:</h4>
+        <ul>
+          <li>✅ Facebook & Google Ads Mastery</li>
+          <li>✅ Social Media Growth & Content Strategy</li>
+          <li>✅ Email Marketing & Automation</li>
+          <li>✅ Analytics, Funnels & Retargeting</li>
+        </ul>
+        <p>By the end, you’ll be able to launch marketing campaigns that bring real leads and sales.</p>
+      `,
+      cta: "Join now and get your first paying client in 30 days.",
+      enroll: "#contact"
+    },
+    "AI-Powered Business Solutions": {
+      title: "AI-Powered Business Solutions",
+      image: "assets/imgs/ai.jpg",
+      price: "E300",
+      duration: "4 Weeks",
+      description: `
+        <p>Discover how to automate your business with AI and save hundreds of hours. No coding required.</p>
+        <h4>Modules Include:</h4>
+        <ul>
+          <li>⚙️ Building AI Workflows (ChatGPT, Notion AI, Zapier)</li>
+          <li>📈 AI for Sales, Marketing, and Customer Support</li>
+          <li>🤖 Real Case Studies — businesses scaling with AI</li>
+        </ul>
+        <p>Walk away with plug-and-play AI automations that make your work faster and smarter.</p>
+      `,
+      cta: "Transform your business using AI — no tech skills required.",
+      enroll: "#contact"
+    },
+    "High-Converting Copywriting": {
+      title: "High-Converting Copywriting",
+      image: "assets/imgs/copy.jpg",
+      price: "E200",
+      duration: "3 Weeks",
+      description: `
+        <p>Learn how to write words that sell. Copywriting is the most profitable skill in digital business.</p>
+        <h4>Modules:</h4>
+        <ul>
+          <li>🧠 Psychology of Persuasion</li>
+          <li>✍️ Crafting Powerful Offers</li>
+          <li>📩 Sales Pages, Ads & Emails That Convert</li>
+        </ul>
+        <p>Perfect for entrepreneurs, freelancers, and marketers who want to sell without sounding “salesy.”</p>
+      `,
+      cta: "Write words that attract clients and grow your income.",
+      enroll: "#contact"
+    },
+    "Brand Identity Development": {
+      title: "Brand Identity Development",
+      image: "assets/imgs/brand.jpg",
+      price: "E250",
+      duration: "3 Weeks",
+      description: `
+        <p>Create a memorable, professional brand identity that builds trust and recognition.</p>
+        <ul>
+          <li>🎨 Visual Design Principles</li>
+          <li>🧭 Brand Storytelling</li>
+          <li>💡 Logo, Color, and Typography Strategy</li>
+          <li>📘 Consistency Across Digital Platforms</li>
+        </ul>
+      `,
+      cta: "Build a brand people love and remember.",
+      enroll: "#contact"
+    },
+    "Sales & Revenue Optimization": {
+      title: "Sales & Revenue Optimization",
+      image: "assets/imgs/sales.jpg",
+      price: "E300",
+      duration: "4 Weeks",
+      description: `
+        <p>Boost sales and retention with proven revenue systems used by fast-growing businesses.</p>
+        <ul>
+          <li>💰 Building Sales Funnels & Upsells</li>
+          <li>📊 CRM Setup & Automation</li>
+          <li>🤝 Customer Retention Strategies</li>
+        </ul>
+      `,
+      cta: "Turn your business into a profit machine.",
+      enroll: "#contact"
+    },
+    "Complete Business Launch Program": {
+      title: "Complete Business Launch Program",
+      image: "assets/imgs/launch.jpg",
+      price: "E500",
+      duration: "6 Weeks",
+      description: `
+        <p>Everything you need to go from idea to income. Build, launch, and scale a profitable online business from scratch.</p>
+        <ul>
+          <li>🚀 Finding & Validating Business Ideas</li>
+          <li>💼 Building Your Brand & Offer</li>
+          <li>📈 Marketing, Sales, and Scaling Systems</li>
+          <li>🧭 Lifetime mentorship & access to resources</li>
+        </ul>
+      `,
+      cta: "Launch your business and start earning faster than ever.",
+      enroll: "#contact"
+    }
+  };
+
+  function openModal() {
+    modal.classList.add("open");
+    modal.setAttribute("aria-hidden", "false");
+    setTimeout(() => modal.querySelector(".modal-content").focus(), 80);
+  }
+
+  function closeModal() {
+    modal.classList.remove("open");
+    modal.setAttribute("aria-hidden", "true");
+    modalContent.innerHTML = "";
+  }
+
+  viewButtons.forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      const card = btn.closest(".course-card");
+      const title = card.querySelector(".course-title").textContent.trim();
+      const course = courseData[title];
+      if (course) {
+        modalContent.innerHTML = `
+          <button class="modal-close" aria-label="Close modal">&times;</button>
+          <div class="course-modal">
+            <img src="${course.image}" alt="${course.title}" class="modal-img">
+            <h2>${course.title}</h2>
+            <p><strong>Duration:</strong> ${course.duration} | <strong>Price:</strong> ${course.price}</p>
+            ${course.description}
+            <p class="cta-text">${course.cta}</p>
+            <a href="${course.enroll}" class="enroll-btn primary-cta">Enroll Now</a>
+          </div>`;
+        openModal();
+        modalContent.querySelector(".modal-close").addEventListener("click", closeModal);
+      }
+    });
+  });
+
+  modal.querySelector(".modal-overlay").addEventListener("click", closeModal);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modal.classList.contains("open")) closeModal();
+  });
+});
+</script>
+    <script src="js/stats.js"></script>
+    <script src="js/tools.js"></script>
+    <script src="js/testimonials.js"></script>
+    <script src="js/why.js"></script>
+    <script src="js/who.js"></script>
+    <script src="js/blog-modal.js"></script>
+    <script src="js/nav.js"></script>
+
+    <script src="js/courses.js"></script>
+</body>
+</html>
