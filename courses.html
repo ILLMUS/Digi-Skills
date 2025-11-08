@@ -389,10 +389,27 @@
 </main>
 
 <!--<button class="whatsapp" aria-label="Chat on WhatsApp" onclick="window.open('https://wa.me/26876759865','_blank')">WhatsApp</button>-->
-
+<script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '687fa27c2dff7e89818983b0' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production',
+          voice: {
+            url: "https://runtime-api.voiceflow.com"
+          }
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
 
 <!-- Scripts -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+
 <script>
   // Initialize AOS animations
   AOS.init({ duration: 1000, once: true });

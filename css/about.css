@@ -275,3 +275,176 @@ p {
   .about-grid { padding: 1rem; }
   .what-content { padding: 2rem 1rem; }
 }
+/* ==============================
+   GLOBAL FIXES
+============================== */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==============================
+   RESPONSIVE LAYOUT HANDLING
+============================== */
+
+/* TABLET VIEW (1024px and below) */
+@media (max-width: 1024px) {
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 50px 6%;
+  }
+
+  .about-image,
+  .about-content {
+    max-width: 100%;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .about-grid {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2.5rem;
+  }
+
+  .grid-1,
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .grid-5,
+  .grid-6 {
+    grid-column: span 3;
+    grid-row: auto;
+  }
+
+  .about-courses {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .texts {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .icon {
+    margin-bottom: 1rem;
+  }
+
+  .what-content {
+    padding: 2.5rem;
+  }
+}
+
+/* MOBILE VIEW (768px and below) */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 7%;
+    gap: 25px;
+  }
+
+  .about-image {
+    order: -1;
+    max-width: 100%;
+  }
+
+  .about-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .about-content p {
+    font-size: 0.95rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+
+  .about-courses {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+
+  .why-content {
+    padding: 2rem 1rem;
+  }
+
+  .texts {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .what-content {
+    padding: 2rem 1.2rem;
+  }
+
+  .what-content .img img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* SMALL MOBILE VIEW (480px and below) */
+@media (max-width: 480px) {
+  .about-section {
+    padding: 30px 5%;
+  }
+
+  .about-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .about-content p {
+    font-size: 0.9rem;
+  }
+
+  .about-grid {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .about-courses {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .texts {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .what-content {
+    padding: 1.5rem 1rem;
+    margin: 2rem auto;
+  }
+
+  .primary-cta {
+    width: 100%;
+    text-align: center;
+    padding: 0.9rem;
+    font-size: 1rem;
+  }
+}
