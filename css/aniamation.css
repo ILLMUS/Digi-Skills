@@ -60,27 +60,6 @@ section, .container {
     margin-top: 25px;
   }
 
-  .tools-section {
-    flex-direction: column;
-  }
-
-  .tools-right .tools-track {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .trust-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .serve-cards, .why-cards, .mission-cards {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* ==============================
