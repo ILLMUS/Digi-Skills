@@ -441,10 +441,5 @@ img, video {
     margin: 2rem auto;
   }
 
-  .primary-cta {
-    width: 100%;
-    text-align: center;
-    padding: 0.9rem;
-    font-size: 1rem;
-  }
+
 }

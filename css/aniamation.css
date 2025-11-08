@@ -215,14 +215,6 @@ section, .container {
     font-size: 1.1rem;
   }
 
-  .primary-cta, .secondary-cta {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-    font-size: 1rem;
-  }
-
   .course-actions {
     flex-direction: column;
     gap: 10px;
